@@ -107,3 +107,49 @@ y sustituirlas por estas
 Para aplicar los cambios debemos reiniciar el servicio con el comando `sudo systemctl restart --now vsftpd`
 
 ![reinicio del servicio](Imagenes/screenshot.13.jpg)
+
+El servicio de sftp ya esta funcionando, pero para poder usarlo necesitamos un cliente ftp como es FileZilla. Descargaremos este programa en nuestra máquina física. Para conectarnos debemos poner la IP del servidor(la maquina virtual), en mi caso la `172.23.192.254`, el usuario y la contraseña habilitados, usuario en mi caso, y el puerto 22 (porque el 21 da problemas)
+
+![Conexión satisfactoria FileZilla](Imagenes/screenshot.14.jpg)
+
+Nos dará un aviso debido al certificado que usa el servidor sftp, pero dado que nosotros mismos hemos creado el servicio podemos confiar. Tras esto podemos probar a pasar un archivo de la máquina fisica a la virtual.
+
+![Transmisión de fichero satisfactoria](Imagenes/screenshot.16.jpg)
+
+### 7. HTTPS
+
+Para añadir seguridad a las conexiones pasando de usar http a https debemos hacer algunos cambios en cosa que ya hemos echo antes en el proceso. Lo primero sera modificar sites-enabled con `sudo nano /etc/nginx/sites-enabled/ryder` y poner lo siguiente.  Lo más importante a destacar es que estan los certificados ssl.
+
+![Modificacion de sites enabled](Imagenes/screenshot.17.jpg)
+
+A continuación debemos generar los certificados que usamos en `sites-enabled/` . Técnicamente estos certificados no son validos pues son autofirmados, pero para ser certificados válidos habria que pagar y podemos confiar en nuestros mismos.
+
+![Obtención de certificado autofirmados](Imagenes/screenshot.18.jpg)
+
+Damos permisos varios a los permisos que hemos generado
+
+![Asignacion de permisos a los certificados](Imagenes/screenshot.19.jpg)
+
+**En la maquina fisica** debemos modificar el archivo host para poder resolver la petición dns con nuestro nombre de dirección web y nuestra ip 
+
+![Modificación del archivo host ](Imagenes/screenshot.20.jpg)
+
+Ahora desde la máquina física podemos ver la la página http://ryder.com
+
+![Navegador maquina física](Imagenes/screenshot.21.jpg)
+
+Para comprobar el funcionamiento de la version https debemos mover la web de ejemplo de la carpeta `./ryder/html/static-webside-example` a la carpeta `./ryder/` y por ultimo borramos el directorio `./html/` tener mucho cuidado con este momento pues podemos romper la maquina
+
+![mover carpeta static-webside-example](Imagenes/screenshot.23.jpg)
+
+Hacemos un último test para comprobar que todo ha funcionado como queremos 
+
+![test de servicio](Imagenes/screenshot.24.jpg)
+
+
+Si todo ha salido correctamente, en el navegador de nuestra maquina fisica deberia aparecer un aviso en la pagina `https://ryder.com` pues los certificados que utilizamos son auto firmados. Tambien una vez pasamos el aviso debemos ver esta pagina web.
+
+![Navegador maquina física](Imagenes/screenshot.22.jpg)
+
+![Navegador maquina física](Imagenes/screenshot.25.jpg)
+
