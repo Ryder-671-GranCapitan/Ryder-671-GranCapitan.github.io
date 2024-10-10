@@ -125,6 +125,7 @@ Nos dará un aviso debido al certificado usado por el servidor SFTP, pero como n
 
 Para añadir seguridad a las conexiones, pasando de usar HTTP a HTTPS, debemos hacer algunos cambios en cosas que ya hemos hecho antes. Lo primero es modificar el archivo en `sites-enabled` con: `sudo nano /etc/nginx/sites-enabled/ryder` y añadir lo siguiente. Lo más importante son los certificados SSL.
 
+Pequeña aclaracion: debe ser `$server_name`. Es un pequeño error al tomar la captura que despues fue cambiado
 ![Modificación de sites-enabled](Imagenes/screenshot.17.jpg)
 
 Luego, generamos los certificados que usamos en `sites-enabled/`. Técnicamente, estos certificados no son válidos porque son autofirmados, pero para tener certificados válidos habría que pagar, y en este caso podemos confiar en nosotros mismos.
