@@ -11,7 +11,7 @@ Es necesario tener instalado:
 - Gunicorn  
 - Pipenv  
 
-![Listado de requisitos previos para la instalación](imagenes/screenshot.1.jpg)  
+![Listado de requisitos previos para la instalación](Imagenes/screenshot.1.jpg)  
 
 ---
 
