@@ -125,6 +125,7 @@ git checkout v0.2
 
 ## Listado de ramas
 1. Listar las ramas con merge y las ramas sin merge.
+
 ![listado](./Imagenes/screenshot.21.jpg)
 
 ## Arreglar conflicto
@@ -132,6 +133,7 @@ git checkout v0.2
 ## Borrar rama
 1. Crear un tag `v0.2`.
 2. Borrar la rama `v0.2`.
+
 ![listado](./Imagenes/screenshot.22.jpg)
 ![listado](./Imagenes/screenshot.23.jpg)
 ![listado](./Imagenes/screenshot.24.jpg)
