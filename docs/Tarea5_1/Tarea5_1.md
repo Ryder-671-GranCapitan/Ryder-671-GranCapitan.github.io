@@ -1,8 +1,8 @@
 # Práctica 5.1
-## Configuración de un servidor DN
+## ejercicios Git y GitHub I
 #### Javier Rider Jimenez
 
-### Repositorio DEAW
+### Repositorio 
 1. Crear un repositorio en GitHub .
 2. Clonar repositorio en local.
 
