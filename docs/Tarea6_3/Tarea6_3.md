@@ -1,4 +1,4 @@
-# Práctica 6.2
+# Práctica 6.3
 ## Ejercicios de Docker 
 #### Javier Rider Jimenez
 
