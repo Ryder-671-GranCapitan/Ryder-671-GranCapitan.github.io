@@ -1,0 +1,138 @@
+/* Importación de fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Afacad", serif;
+}
+
+/* Estilos generales del body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f3eb;
+    margin: 0;
+    padding: 0;
+}
+
+/* BANNER */
+.banner {
+    text-align: center;
+    background-color: #a02c2c;
+    color: white;
+    padding: 2.5rem 1.25rem;
+    position: relative;
+    border-top: 0.3rem solid #d9a14a;
+}
+
+.banner>h1 {
+    background-color: #f4b400;
+    color: white;
+    display: inline-block;
+    padding: 1rem 1.8rem;
+    font-size: 2.2rem;
+    font-weight: bold;
+    border-radius: 1.25rem;
+    margin-bottom: 1rem;
+    position: absolute;
+    top: -2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+.banner>p {
+    font-size: 1.25rem;
+    max-width: 37.5rem;
+    margin: 0.5rem auto;
+    padding-top: 0.6rem;
+}
+
+/* BANNER CONTACTO */
+.banner-contacto {
+    background-color: #a02c2c;
+    color: white;
+    margin: 1rem auto;
+    width: 12rem;
+    padding: 1.25rem;
+    border-radius: 0.6rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-contacto>a>h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.6rem;
+}
+
+.banner-contacto a {
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.banner-contacto a:hover {
+    color: #ffd166;
+    text-decoration: none;
+}
+
+/* Media Query para tablets */
+@media screen and (max-width: 62.5rem) {
+    .banner {
+        padding: 1.9rem 1rem;
+    }
+
+    .banner > h1 {
+        font-size: 1.75rem;
+        padding: 0.75rem 1.65rem;
+        top: -2rem;
+    }
+
+    .banner > p {
+        font-size: 1rem;
+        max-width: 31.25rem;
+    }
+
+    .banner-contacto {
+        width: 10rem;
+        padding: 1rem;
+    }
+
+    .banner-contacto > a > h1 {
+        font-size: 1.6rem;
+    }
+}
+
+/* Media Query para móviles */
+@media screen and (max-width: 31.25rem) {
+    .banner {
+        padding: 1.6rem 0.6rem;
+    }
+
+    .banner > h1 {
+        font-size: 1.4rem;
+        padding: 0.6rem 1.25rem;
+        top: -1.8rem;
+    }
+
+    .banner > p {
+        font-size: 0.9rem;
+        max-width: 100%;
+        padding: 0 0.6rem;
+    }
+
+    .banner-contacto {
+        width: 8rem;
+        padding: 0.8rem;
+    }
+
+    .banner-contacto > a > h1 {
+        font-size: 1.3rem;
+        margin-bottom: 0.4rem;
+    }
+}

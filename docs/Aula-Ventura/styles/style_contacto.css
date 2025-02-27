@@ -1,0 +1,141 @@
+/* Contenedor principal del formulario */
+.contacto {
+    width: 85%; /* Aumentar el ancho del formulario */
+    max-width: 700px; /* Aumentar el ancho máximo */
+    background-color: #ffcc5c;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin: 2rem auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Etiquetas de los campos */
+.contacto label {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/* Estilos generales para input, select y textarea */
+.contacto input,
+.contacto select,
+.contacto textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    outline: none;
+}
+
+/* Estilo para textarea */
+.contacto textarea {
+    height: 6rem;
+    resize: none;
+}
+
+/* Estilo para select */
+.contacto select {
+    background-color: white;
+    cursor: pointer;
+}
+
+/* Contenedor de opciones de radio */
+.radio-group {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+/* Ocultar input radio nativo */
+.contacto input[type="radio"] {
+    display: none;
+}
+
+/* Estilo para labels de los radio */
+.contacto input[type="radio"] + label {
+    background-color: white;
+    padding: 0.5rem 1rem;
+    width: 8rem;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    text-align: center;
+    
+}
+
+/* Estilo cuando el radio está seleccionado */
+.contacto input[type="radio"]:checked + label {
+    background-color: #d9534f;
+    color: white;
+    border: 2px solid #c9302c;
+}
+
+/* Botón de enviar */
+.contacto button {
+    display: block;
+    background-color: #d9534f;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    margin-left: auto; 
+}
+
+/* Contenedor para el tipo de servicio */
+.tipo-servicio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+
+.contacto .email-telefono {
+    display: flex;
+    gap: 1rem;
+}
+
+
+.contacto .email-telefono > div {
+    flex: 1;
+}
+
+
+.contacto .email-telefono input {
+    width: 100%;
+}
+
+/* Efecto al pasar el mouse */
+.contacto button:hover {
+    background-color: #c9302c;
+}
+
+/* Efecto al hacer clic */
+.contacto button:active {
+    transform: scale(0.95);
+}
+
+
+/* Diseño responsivo */
+@media (max-width: 500px) {
+    .contacto {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .radio-group {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: flex-start;
+    }
+}
