@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://cloudconvert.com/
+HostUrl=https://eu-central.storage.cloudconvert.com/tasks/f6371ffb-7fdd-4fe6-80ca-2f4b393854ea/IES-blas-infante.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cloudconvert-production%2F20250227%2Ffra%2Fs3%2Faws4_request&X-Amz-Date=20250227T111727Z&X-Amz-Expires=86400&X-Amz-Signature=764f5761c9416798034a66d87b18624293b73108e51e3860b5e3941631c508ef&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22IES-blas-infante.webp%22&response-content-type=image%2Fwebp&x-id=GetObject

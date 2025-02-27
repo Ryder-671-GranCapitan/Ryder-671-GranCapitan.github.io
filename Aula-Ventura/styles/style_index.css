@@ -1,0 +1,262 @@
+/* Contenedor de actividades */
+.actividades {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Estilos base para cada actividad */
+.actividad {
+    position: relative;
+    width: 70rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.actividad figure {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.actividad img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 1rem;
+    transition: filter 0.3s ease;
+}
+
+/* Overlay oculto por defecto */
+.actividad .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1rem;
+}
+
+/* Texto dentro del overlay */
+.actividad .overlay p {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Efecto Hover */
+.actividad:hover img {
+    filter: blur(0.3rem);
+}
+
+.actividad:hover .overlay {
+    opacity: 1;
+}
+
+/* Título de la actividad */
+.actividad figcaption {
+    background-color: #a9302f; 
+    color: #ffffff; 
+    padding: 1.5rem;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+/* Efecto Click */
+.actividad:active {
+    transform: scale(0.95);
+}
+
+/* Título */
+.resenas-titulo {
+    background-color: #f4b400;
+    color: white;
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Descripción */
+.resenas-descripcion {
+    color: white;
+    background-color: #a02c2c;
+    padding: 2rem;
+    font-size: 1.8rem;
+    max-width: 80rem;
+    margin: 0 auto 3rem;
+    border-radius: 1rem;
+}
+
+/* Contenedor de reseñas */
+.resenas-contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+/* Estilos de cada reseña */
+.resena {
+    position: relative;
+    width: 35rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    text-align: center;
+    min-height: 25rem;
+}
+
+/* Imagen */
+.resena figure {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.resena img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 1rem;
+    transition: filter 0.3s ease;
+    object-fit: cover;
+    height: 22rem;
+}
+
+/* Efecto Hover */
+.resena:hover img {
+    filter: blur(0.3rem);
+}
+
+/* Overlay para mostrar reseña */
+.resena .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 1rem;
+}
+
+/* Texto del overlay */
+.resena .overlay p {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    max-width: 90%;
+}
+
+/* Mostrar reseña al hacer hover */
+.resena:hover .overlay {
+    opacity: 1;
+}
+
+/* Título de la reseña */
+.resena figcaption {
+    background-color: #f4b400;
+    color: black;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+
+/* Media Query para tablets */
+@media screen and (max-width: 1000px) {
+    .actividades {
+        flex-direction: column;
+        padding: 2rem;
+        gap: 1.5rem;
+    }
+
+    .actividad {
+        width: 100%;
+        max-width: 50rem;
+    }
+
+    .resenas-contenedor {
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+    .resena {
+        width: 28rem;
+        min-height: 20rem;
+    }
+
+    .resena img {
+        height: 18rem;
+    }
+
+    .resenas-descripcion {
+        font-size: 1.5rem;
+        padding: 1.5rem;
+        max-width: 90%;
+    }
+}
+
+/* Media Query para móviles */
+@media screen and (max-width: 500px) {
+    .actividades {
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .actividad figcaption {
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
+
+    .actividad .overlay p {
+        font-size: 1.5rem;
+    }
+
+    .resenas-titulo {
+        font-size: 1.8rem;
+        padding: 1rem 2rem;
+    }
+
+    .resena {
+        width: 100%;
+        min-height: 18rem;
+    }
+
+    .resena img {
+        height: 15rem;
+    }
+
+    .resena .overlay p {
+        font-size: 1.2rem;
+    }
+
+    .resena figcaption {
+        font-size: 1.4rem;
+        padding: 1rem;
+    }
+}

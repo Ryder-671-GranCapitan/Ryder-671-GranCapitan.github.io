@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aulaventura - Servicios Educativos</title>
+    <link rel="icon" href="images/favicon-32x32.png" type="image/png">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style_header.css">
+    <link rel="stylesheet" href="styles/style_contacto.css">
+    <link rel="stylesheet" href="styles/style_footer.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo-container">
+            <img src="images/logo.png" alt="Aulaventura Logo">
+            <div class="logo-text">
+                <span class="company-name">AULAVENTURA</span>
+
+                <span class="company-tagline">SERVICIOS EDUCATIVOS</span>
+            </div>
+        </a>
+
+        <nav class="nav">
+            <ul>
+                <li><a href="recurrentes.html">Servicios</a></li>
+                <li><a href="reseñas.html">Reseñas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <main>
+        <section class="banner">
+            <h1>Contacto</h1>
+
+            <p>¿Tienes dudas o quieres saber más sobre nuestros servicios?</p>
+            <p>¡Contáctenos!</p>
+        </section>
+
+        <section class="contacto">
+            <form>
+                <label for="nombre">NOMBRE</label>
+                <input type="text" id="nombre" required>
+
+                <div class="email-telefono">
+                    <div>
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div>
+                        <label for="telefono">TELEFONO</label>
+                        <input type="tel" id="telefono" required>
+                    </div>
+                </div>
+
+                <label for="tipo_servicio">TIPO DE SERVICIO</label>
+                <div class="tipo-servicio">
+                    <input type="radio" id="recurrente" name="tipo_servicio" value="recurrente" required checked>
+                    <label for="recurrente">Recurrente</label>
+
+                    <input type="radio" id="puntual" name="tipo_servicio" value="puntual" required>
+                    <label for="puntual">Puntual</label>
+                </div>
+
+                <div class="actividad recurrente">
+                    <label for="actividad">ACTIVIDADES RECURRENTES</label>
+                    <select id="actividad" required>
+                        <option name="futbol" id="futbol">Futbol</option>
+                        <option name="baloncesto" id="baloncesto">Baloncesto</option>
+                        <option name="tenis" id="tenis">Tenis</option>
+                        <option name="natacion" id="natacion">Natación</option>
+                        <option name="flamenco" id="flamenco">Flamenco</option>
+                        <option name="personalizado" id="personalizado">Fersonalizado</option>
+                    </select>
+                </div>
+
+
+                <label for="consulta">CONSULTA</label>
+                <textarea id="consulta" required></textarea>
+
+                <button type="submit">ENVIAR</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <!-- Contacto -->
+        <section class="footer-contact">
+            <address class="contact-box">
+                <a href="https://wa.me/3466832323--2" target="_blank">
+                    <p><img src="images/whatsapp.png" alt="WhatsApp"> +34 668 323232</p>
+                </a>
+                <a href="https://www.facebook.com/Aulaventura" target="_blank">
+                    <p><img src="images/facebook.png" alt="Facebook"> AULAVENTURA</p>
+                </a>
+                <a href="https://www.google.com/maps?q=CALLE+CIELITO+LINDO+2">
+                    <p><img src="images/calle.png" alt="Ubicación"> CALLE CIELITO LINDO 2</p>
+                </a>
+
+            </address>
+        </section>
+
+        <!-- Logo  -->
+        <figure class="footer-logo">
+            <a href="index.html" class="logo-container">
+                <img src="images/logo.png" alt="Aulaventura Logo">
+            </a>
+        </figure>
+
+        <!-- Sección mapa -->
+        <section class="footer-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3148.880357861116!2d-4.788982424111224!3d37.88648057195744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6cdf613a6a9da3%3A0x2d200e7b3f82692f!2sAv.%20de%20la%20Rep%C3%BAblica%20Argentina%2C%202%2C%20Poniente%20Sur%2C%2014005%20C%C3%B3rdoba!5e0!3m2!1ses!2ses!4v1739025602494!5m2!1ses!2ses"
+                width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </section>
+    </footer>
+
+
+
+
+</body>
+
+</html>

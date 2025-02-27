@@ -1,0 +1,126 @@
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFD980;
+    padding: 1.25rem;
+    border-top: 0.25rem solid #d9a14a;
+}
+
+/* Secciones dentro de footer */
+footer > .footer-contact {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+footer > .footer-contact > .contact-box {
+    background-color: #cfe8ff;
+    padding: 1rem;
+    border-radius: 0.6rem;
+    display: inline-block;
+}
+
+footer > .footer-contact > .contact-box p {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0.3rem 0;
+}
+
+footer > .footer-contact > .contact-box p img {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+}
+
+/* Logo */
+footer > .footer-logo {
+    flex: 0.5;
+    display: flex;
+    justify-content: center;
+}
+footer > .footer-logo > a > img {
+    height: 10rem;
+    width: auto;
+    animation: logoSpin 5s ease-in-out infinite;
+}
+
+/* Sección mapa */
+footer > .footer-map {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+footer > .footer-map > iframe {
+    border-radius: 2rem;
+}
+
+/* Animación para el logo */
+@keyframes logoSpin {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(-10deg);
+    }
+    75% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* Media query para pantallas medianas (tablets) */
+@media (max-width: 1000px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    footer > .footer-logo > a > img {
+        height: 5rem;
+    }
+    footer > .footer-contact > .contact-box p {
+        font-size: 0.8rem;
+        width: 23rem;
+    }
+
+
+    footer > .footer-contact,
+    footer > .footer-map {
+        justify-content: center;
+        margin-bottom: 0.6rem;
+    }
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 500px) {
+    footer {
+        padding: 1rem;
+        
+    }
+
+    footer > .footer-logo > a > img {
+        height: 6rem;
+    }
+
+    footer > .footer-contact > .contact-box p {
+        font-size: 0.8rem;
+        width: 23rem;
+    }
+
+    footer > .footer-contact,
+    footer > .footer-map {
+        flex-direction: column;
+        align-items: center;
+    }
+}
