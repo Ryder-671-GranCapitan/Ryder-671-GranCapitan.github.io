@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://cloudconvert.com/
+HostUrl=https://eu-central.storage.cloudconvert.com/tasks/1ff1b39d-3586-4deb-b678-59f96b005648/CLOANIMG001-275x275.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cloudconvert-production%2F20250227%2Ffra%2Fs3%2Faws4_request&X-Amz-Date=20250227T111912Z&X-Amz-Expires=86400&X-Amz-Signature=25c208b73e80ef9df0791c2d12aff971f339c3654a119bcd7c2354b8c9aa3c81&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22CLOANIMG001-275x275.webp%22&response-content-type=image%2Fwebp&x-id=GetObject

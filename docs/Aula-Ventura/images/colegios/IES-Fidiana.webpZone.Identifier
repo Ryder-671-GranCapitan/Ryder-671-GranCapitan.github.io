@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://cloudconvert.com/
+HostUrl=https://eu-central.storage.cloudconvert.com/tasks/7b9799f1-3621-4b43-8e60-0c391596d768/IES-Fidiana.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cloudconvert-production%2F20250227%2Ffra%2Fs3%2Faws4_request&X-Amz-Date=20250227T111725Z&X-Amz-Expires=86400&X-Amz-Signature=44813e3214daa95c7dd31eea9e3b03c3f4c29208caf21ab151b7742c7d31d941&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22IES-Fidiana.webp%22&response-content-type=image%2Fwebp&x-id=GetObject
